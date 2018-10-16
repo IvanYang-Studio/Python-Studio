@@ -1,7 +1,7 @@
 from sklearn import datasets
-from playML.kNN import KNNClassifier
-from playML.model_selection import train_test_split
-from playML.metrics import accuracy_score
+from .kNN import KNNClassifier
+from .model_selection import train_test_split
+from .metrics import accuracy_score
 
 digits = datasets.load_digits()
 X = digits.data
