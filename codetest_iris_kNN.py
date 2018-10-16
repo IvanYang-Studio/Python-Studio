@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import datasets
-from playML.model_selection import train_test_split
-from playML.kNN import KNNClassifier
-from playML.metrics import accuracy_score
+from .model_selection import train_test_split
+from .kNN import KNNClassifier
+from .metrics import accuracy_score
 
 iris = datasets.load_iris()
 X = iris.data
