@@ -1,2 +1,2 @@
 # Python-Studio
-Python kNN_Program / SimpleLinearRegression
+Python kNN_Program / SimpleLinearRegression / LinearRegression
