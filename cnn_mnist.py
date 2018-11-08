@@ -34,11 +34,11 @@ test_y = mnist.test.labels[:3000]   # 標籤
 # tf.nn.conv2d / tf.layers.conv2d(輸入參數較多) 兩個方法雷同
 """第 1 層 卷積"""
 conv1 = tf.layers.conv2d(
-    inputs=input_X_images,   # 形狀 [28, 28, 1]
+    inputs=input_X_images,  # 形狀 [28, 28, 1]
     filters=32,             # 32個過濾器，輸出的深度 (depth) 是32
     kernel_size=[5, 5],     # 過濾器在二維的大小是 (5 * 5)
     strides=1,              # 步長是1
-    padding='same',          # same 表示輸出大小不變，因此需要在外圍捕零兩圈
+    padding='same',         # same 表示輸出大小不變，因此需要在外圍捕零兩圈
     activation=tf.nn.relu   # 激活函數是 Relu
 )   # 形狀 [28, 28, 32]
 
@@ -55,7 +55,7 @@ conv2 = tf.layers.conv2d(
     filters=64,             # 64個過濾器，輸出的深度 (depth) 是64
     kernel_size=[5, 5],     # 過濾器在二維的大小是 (5 * 5)
     strides=1,              # 步長是1
-    padding='same',          # same 表示輸出大小不變，因此需要在外圍捕零兩圈
+    padding='same',         # same 表示輸出大小不變，因此需要在外圍捕零兩圈
     activation=tf.nn.relu,  # 激活函數是 Relu
 )   # 形狀 [14, 14, 64]
 
