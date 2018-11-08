@@ -97,7 +97,8 @@ sess = tf.Session()
 init = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())
 sess.run(init)
 
-for i in range(200):
+"""訓練兩萬Step"""
+for i in range(20000):
     batch = mnist.train.next_batch(50)  # 從 Train (訓練) 數據集裡取 下一個50個樣本
     train_loss, train_op_ = sess.run([loss, train_op], {input_X: batch[0], output_y: batch[1]})
     if i % 100 == 0:
